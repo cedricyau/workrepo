@@ -1,0 +1,126 @@
+2012-11-23 14:28:23,377 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cd2e33: startup date [Fri Nov 23 14:28:23 GMT 2012]; root of context hierarchy
+2012-11-23 14:28:23,471 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 14:28:23,736 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 14:28:24,080 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 14:28:24,096 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1185844: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqReader,bsaMqReader,murexMqWriter,bsaMqWriter,messageService]; root of factory hierarchy
+2012-11-23 14:31:11,585 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1712b3a: startup date [Fri Nov 23 14:31:11 GMT 2012]; root of context hierarchy
+2012-11-23 14:31:11,694 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 14:31:11,944 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 14:31:12,288 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 14:31:12,319 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@893969: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqReader,bsaMqReader,murexMqWriter,bsaMqWriter,messageService]; root of factory hierarchy
+2012-11-23 14:31:17,335 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 14:31:17,585 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 14:31:42,333 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 14:31:57,535 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@1aac775
+2012-11-23 14:33:26,561 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3128CURM06
+2012-11-23 14:33:26,608 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3136FTAX77
+2012-11-23 15:47:38,369 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@fefe3f: startup date [Fri Nov 23 15:47:38 GMT 2012]; root of context hierarchy
+2012-11-23 15:47:38,463 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 15:47:38,713 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 15:47:39,072 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 15:47:39,103 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13e4a5a: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 15:47:45,806 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 15:47:46,040 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 15:47:50,274 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 15:47:51,509 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@e7bb91
+2012-11-23 15:49:06,551 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3128CURM06
+2012-11-23 15:49:44,564 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3136FTAX77
+2012-11-23 18:08:54,498 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@15e0873: startup date [Fri Nov 23 18:08:54 GMT 2012]; root of context hierarchy
+2012-11-23 18:08:54,686 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 18:08:55,483 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 18:08:56,233 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 18:08:56,279 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1015a9e: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 18:10:02,697 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 18:10:03,103 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 18:10:06,291 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 18:10:33,086 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 18:10:33,258 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 18:10:35,101 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 18:10:36,585 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@2573a8
+2012-11-23 18:12:22,188 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f6303: startup date [Fri Nov 23 18:12:22 GMT 2012]; root of context hierarchy
+2012-11-23 18:12:22,235 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 18:12:22,329 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 18:12:22,438 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 18:12:22,454 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d0479: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 18:14:19,274 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 18:14:19,493 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 18:14:20,587 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 18:14:21,571 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@232697
+2012-11-23 18:15:16,349 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3128CURM06
+2012-11-23 18:15:22,223 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3136FTAX77
+2012-11-23 18:17:20,450 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3136FTAX77
+2012-11-23 18:21:50,339 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A0FA88
+2012-11-23 18:22:01,104 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137A0FA88
+2012-11-23 18:22:05,682 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A55N07
+2012-11-23 18:36:02,519 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@117f31e: startup date [Fri Nov 23 18:36:02 GMT 2012]; root of context hierarchy
+2012-11-23 18:36:02,566 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 18:36:02,660 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 18:36:02,769 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 18:36:02,769 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@cd4544: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 18:36:05,191 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 18:36:05,253 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 18:36:05,253 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 18:36:05,956 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@ad97f5
+2012-11-23 18:38:52,258 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ba5c7a: startup date [Fri Nov 23 18:38:52 GMT 2012]; root of context hierarchy
+2012-11-23 18:38:52,336 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 18:38:52,586 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 18:38:52,930 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 18:38:52,961 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@893969: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 18:38:58,227 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 18:38:58,461 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 18:38:58,742 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 18:38:59,680 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@811e10
+2012-11-23 18:39:09,960 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 18:39:09,991 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 18:39:09,991 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 18:40:26,002 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3128CURM06
+2012-11-23 18:40:26,893 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3136FTAX77
+2012-11-23 18:55:31,741 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cd2e33: startup date [Fri Nov 23 18:55:31 GMT 2012]; root of context hierarchy
+2012-11-23 18:55:31,819 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 18:55:32,069 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 18:55:32,429 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 18:55:32,460 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@688954: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 18:55:47,693 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@e64686: startup date [Fri Nov 23 18:55:47 GMT 2012]; root of context hierarchy
+2012-11-23 18:55:47,724 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 18:55:47,834 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 18:55:47,928 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 18:55:47,928 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1362a63: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 18:55:51,021 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 18:55:51,255 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 18:55:54,865 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 18:55:55,958 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@2e34bf
+2012-11-23 18:56:09,301 [main] INFO  musi.interfaces.BulkStaticUploader - security US3128CURM06 sent to MurexSp
+2012-11-23 18:59:32,257 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3136FTAX77
+2012-11-23 18:59:58,052 [main] INFO  musi.interfaces.BulkStaticUploader - security US3136FTAX77 sent to MurexSp
+2012-11-23 19:00:00,349 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A0FA88
+2012-11-23 19:00:02,896 [main] INFO  musi.interfaces.BulkStaticUploader - security US3137A0FA88 sent to MurexSp
+2012-11-23 19:01:14,813 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A55N07
+2012-11-23 19:02:17,043 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f6303: startup date [Fri Nov 23 19:02:17 GMT 2012]; root of context hierarchy
+2012-11-23 19:02:17,106 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-main-context.xml]
+2012-11-23 19:02:17,200 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-jms-context.xml]
+2012-11-23 19:02:17,293 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [main.properties]
+2012-11-23 19:02:17,309 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@153b2cb: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,mqConnectionFactory,jmsQueueConnectionFactory,jmsTxManager,txAdvice,jmsDestinationResolver,jmsQueueTemplate,bulkStaticUploader,murexMqAdapter,bsaMqAdapter,messageService]; root of factory hierarchy
+2012-11-23 19:02:36,761 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 10
+2012-11-23 19:02:36,980 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 10
+2012-11-23 19:02:39,761 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3128CURM06
+2012-11-23 19:03:09,477 [main] INFO  org.springframework.jms.connection.SingleConnectionFactory - Established shared JMS Connection: com.ibm.mq.jms.MQQueueConnection@1eeb372
+2012-11-23 19:03:53,178 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3128CURM06
+2012-11-23 19:03:53,178 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3136FTAX77
+2012-11-23 19:04:33,956 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3136FTAX77
+2012-11-23 19:04:35,769 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A0FA88
+2012-11-23 19:05:26,328 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137A0FA88
+2012-11-23 19:05:26,328 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A55N07
+2012-11-23 19:05:56,451 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137A55N07
+2012-11-23 19:05:56,482 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A5DS02
+2012-11-23 19:06:26,559 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137A5DS02
+2012-11-23 19:06:26,605 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137A5EG54
+2012-11-23 19:06:56,682 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137A5EG54
+2012-11-23 19:06:56,713 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137ABU586
+2012-11-23 19:07:26,836 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137ABU586
+2012-11-23 19:07:26,883 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137AFP710
+2012-11-23 19:07:56,990 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137AFP710
+2012-11-23 19:07:57,022 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US3137AK2J90
+2012-11-23 19:08:27,113 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US3137AK2J90
+2012-11-23 19:08:27,145 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US31396PUG44
+2012-11-23 19:08:57,283 [main] WARN  musi.interfaces.BulkStaticUploader - no response from Murex for security : US31396PUG44
+2012-11-23 19:08:57,315 [main] INFO  musi.interfaces.BulkStaticUploader - processing security : US31397M3C93

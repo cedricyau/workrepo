@@ -1,0 +1,7 @@
+# MQ/JMS related properties
+mq.receive_queue=
+mq.send_queue=
+mq.queue_manager=MWDVLP03
+mq.queue_hostname=mwdvlp
+mq.queue_port=1403
+mq.channel=MQADMIN

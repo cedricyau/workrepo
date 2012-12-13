@@ -1,0 +1,706 @@
+2012-11-16 18:33:00,686 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 5
+2012-11-16 18:33:00,811 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 5
+2012-11-16 18:33:00,811 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerRequest type="flexibleRequest"> 
+  <flexibleRequest> 
+    <fields> 
+      <field>AMT_ISSUED</field>  
+      <field>AMT_OUTSTANDING</field>  
+      <field>CALC_TYP</field>  
+      <field>CALLABLE</field>  
+      <field>CALL_DAYS_NOTICE</field>  
+      <field>CALL_SCHEDULE</field>  
+      <field>CDR_COUNTRY_CODE</field>  
+      <field>CDR_SETTLE_CODE</field>  
+      <field>CONVERTIBLE</field>  
+      <field>COUNTRY_FULL_NAME</field>  
+      <field>CPN</field>  
+      <field>CPN_CRNCY</field>  
+      <field>CPN_FREQ</field>  
+      <field>CPN_TYP</field>  
+      <field>CRNCY</field>  
+      <field>CV_CNVS_PX</field>  
+      <field>CV_COMMON_EXCH</field>  
+      <field>CV_COMMON_TICKER</field>  
+      <field>CV_MANDATORY_CNVS</field>  
+      <field>CV_START_DT</field>  
+      <field>CV_UNTIL</field>  
+      <field>DAYS_TO_SETTLE</field>  
+      <field>DAY_CNT</field>  
+      <field>DAY_CNT_DES</field>  
+      <field>DES_NOTES</field>  
+      <field>FINAL_MATURITY</field>  
+      <field>FINAL_SETTLE_DT</field>  
+      <field>FIRST_CPN_PERIOD_TYP</field>  
+      <field>FIRST_SETTLE_DT</field>  
+      <field>FLOATER</field>  
+      <field>FLT_PAY_HOLIDAY_CDR</field>  
+      <field>FLT_REFIX_HOLIDAY_CDR</field>  
+      <field>FLT_SPREAD</field>  
+      <field>ID_BBG_UNIQUE</field>  
+      <field>ID_CUSIP</field>  
+      <field>ID_ISIN</field>  
+      <field>INT_ACC_DT</field>  
+      <field>ISSUER</field>  
+      <field>ISSUER_INDUSTRY</field>  
+      <field>ISSUE_DT</field>  
+      <field>ISSUE_PX</field>  
+      <field>IS_DEBT_SECURED</field>  
+      <field>IS_INDEX_LINKED</field>  
+      <field>IS_PERPETUAL</field>  
+      <field>IS_SUBORDINATED</field>  
+      <field>IS_UNSUBORDINATED</field>  
+      <field>LAST_CPN_PERIOD_TYP</field>  
+      <field>LEAD_MGR</field>  
+      <field>MARKET_ISSUE</field>  
+      <field>MARKET_SECTOR</field>  
+      <field>MARKET_SECTOR_DES</field>  
+      <field>MIN_PIECE</field>  
+      <field>NXT_PUT_DT</field>  
+      <field>NXT_PUT_PX</field>  
+      <field>PAR_AMT</field>  
+      <field>PUTABLE</field>  
+      <field>PUT_SCHEDULE</field>  
+      <field>REAL_BLOOMBERG_DEPT_DES</field>  
+      <field>REAL_FIRST_CPN_DT</field>  
+      <field>REDEMP_CRNCY</field>  
+      <field>REDEMP_VAL</field>  
+      <field>SECURITY_DES</field>  
+      <field>SERIES</field>  
+      <field>STRUCTURED_NOTE</field>  
+      <field>TICKER</field>  
+      <field>ZERO_CPN</field> 
+    </fields>  
+    <securities> 
+      <security> 
+        <code>US17313YAL56</code>  
+        <codeType>ISIN</codeType> 
+      </security> 
+    </securities> 
+  </flexibleRequest>
+</BloombergInterfaceServerRequest>
+
+2012-11-16 18:33:03,858 [main] INFO  musi.interfaces.BulkStaticUploader - murex response is : <?xml version="1.0" encoding="UTF-8"?>
+
+<MxResponse>
+  <status>FAILURE</status>
+  <descr>C 1.875 OCT12</descr>
+  <errorCode>DUPLICATE_SECURITY</errorCode>
+  <originalRequest>
+    <BloombergInterfaceServerResponse>
+      <securities>
+        <security>
+          <CALL_SCHEDULE_GROUP/>
+          <FLT_PAY_HOLIDAY_CDR_GROUP/>
+          <FLT_REFIX_HOLIDAY_CDR_GROUP/>
+          <PUT_SCHEDULE_GROUP/>
+          <AMT_ISSUED>5.0E9</AMT_ISSUED>
+          <AMT_OUTSTANDING>0.0</AMT_OUTSTANDING>
+          <CALC_TYP>1</CALC_TYP>
+          <CALLABLE>N</CALLABLE>
+          <CDR_COUNTRY_CODE>US</CDR_COUNTRY_CODE>
+          <CDR_SETTLE_CODE>US</CDR_SETTLE_CODE>
+          <CONVERTIBLE>N</CONVERTIBLE>
+          <COUNTRY_FULL_NAME>UNITED STATES</COUNTRY_FULL_NAME>
+          <CPN>1.875</CPN>
+          <CPN_CRNCY>USD</CPN_CRNCY>
+          <CPN_FREQ>2</CPN_FREQ>
+          <CPN_TYP>FIXED</CPN_TYP>
+          <CRNCY>USD</CRNCY>
+          <DAYS_TO_SETTLE>3</DAYS_TO_SETTLE>
+          <DAY_CNT>5</DAY_CNT>
+          <DAY_CNT_DES>30/360</DAY_CNT_DES>
+          <DES_NOTES>ORIG SPRD @ ISS 49.4BP (99.642).</DES_NOTES>
+          <FINAL_MATURITY>2012-10-22</FINAL_MATURITY>
+          <FIRST_CPN_PERIOD_TYP>Long First</FIRST_CPN_PERIOD_TYP>
+          <FIRST_SETTLE_DT>2009-09-22</FIRST_SETTLE_DT>
+          <FLOATER>N</FLOATER>
+          <ID_CUSIP>17313YAL5</ID_CUSIP>
+          <ID_ISIN>US17313YAL56</ID_ISIN>
+          <INT_ACC_DT>2009-09-22</INT_ACC_DT>
+          <ISSUER>CITIGROUP FUNDING INC</ISSUER>
+          <ISSUER_INDUSTRY>FINANCIAL</ISSUER_INDUSTRY>
+          <ISSUE_DT>2009-09-22</ISSUE_DT>
+          <ISSUE_PX>99.642</ISSUE_PX>
+          <IS_DEBT_SECURED>N</IS_DEBT_SECURED>
+          <IS_INDEX_LINKED>N</IS_INDEX_LINKED>
+          <IS_PERPETUAL>N</IS_PERPETUAL>
+          <IS_SUBORDINATED>N</IS_SUBORDINATED>
+          <IS_UNSUBORDINATED>N</IS_UNSUBORDINATED>
+          <LAST_CPN_PERIOD_TYP>Normal</LAST_CPN_PERIOD_TYP>
+          <LEAD_MGR>CITI</LEAD_MGR>
+          <MARKET_ISSUE>US DOMESTIC</MARKET_ISSUE>
+          <MARKET_SECTOR>8</MARKET_SECTOR>
+          <MARKET_SECTOR_DES>Corp</MARKET_SECTOR_DES>
+          <MIN_PIECE>1000.0</MIN_PIECE>
+          <PAR_AMT>1000.0</PAR_AMT>
+          <PUTABLE>N</PUTABLE>
+          <REAL_BLOOMBERG_DEPT_DES>Corp</REAL_BLOOMBERG_DEPT_DES>
+          <REAL_FIRST_CPN_DT>2010-04-22</REAL_FIRST_CPN_DT>
+          <REDEMP_CRNCY>USD</REDEMP_CRNCY>
+          <REDEMP_VAL>100.0</REDEMP_VAL>
+          <SECURITY_DES>C 1 7/8 10/22/12</SECURITY_DES>
+          <STRUCTURED_NOTE>N</STRUCTURED_NOTE>
+          <TICKER>C</TICKER>
+          <ZERO_CPN>N</ZERO_CPN>
+        </security>
+      </securities>
+    </BloombergInterfaceServerResponse>
+  </originalRequest>
+</MxResponse>
+
+2012-11-16 18:33:03,858 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerResponse type="flexibleRequest"> 
+  <securities> 
+    <security id="US3128CURM06" status="success"> 
+      <CALL_SCHEDULE_GROUP/>  
+      <FLT_PAY_HOLIDAY_CDR_GROUP/>  
+      <FLT_REFIX_HOLIDAY_CDR_GROUP/>  
+      <PUT_SCHEDULE_GROUP/>  
+      <AMT_OUTSTANDING>2.1695630520325E7</AMT_OUTSTANDING>  
+      <CALLABLE>N</CALLABLE>  
+      <CDR_COUNTRY_CODE>US</CDR_COUNTRY_CODE>  
+      <COUNTRY_FULL_NAME>UNITED STATES</COUNTRY_FULL_NAME>  
+      <CPN>5.5</CPN>  
+      <CPN_FREQ>12</CPN_FREQ>  
+      <CPN_TYP>FIXED</CPN_TYP>  
+      <CRNCY>USD</CRNCY>  
+      <DAYS_TO_SETTLE>17</DAYS_TO_SETTLE>  
+      <DAY_CNT>104</DAY_CNT>  
+      <DAY_CNT_DES>30/360(104)</DAY_CNT_DES>  
+      <FIRST_SETTLE_DT>2010-10-01</FIRST_SETTLE_DT>  
+      <FLOATER>N</FLOATER>  
+      <ID_CUSIP>3128CURM0</ID_CUSIP>  
+      <ID_ISIN>US3128CURM06</ID_ISIN>  
+      <ISSUER>Freddie Mac</ISSUER>  
+      <ISSUE_DT>2010-10-01</ISSUE_DT>  
+      <MARKET_SECTOR>11</MARKET_SECTOR>  
+      <MARKET_SECTOR_DES>Mtge</MARKET_SECTOR_DES>  
+      <PAR_AMT>4.699826E7</PAR_AMT>  
+      <SECURITY_DES>FG G30492</SECURITY_DES>  
+      <TICKER>FG</TICKER> 
+    </security> 
+  </securities>
+</BloombergInterfaceServerResponse>
+
+2012-11-16 18:34:07,214 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 5
+2012-11-16 18:34:07,292 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 5
+2012-11-16 18:34:07,292 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerRequest type="flexibleRequest"> 
+  <flexibleRequest> 
+    <fields> 
+      <field>AMT_ISSUED</field>  
+      <field>AMT_OUTSTANDING</field>  
+      <field>CALC_TYP</field>  
+      <field>CALLABLE</field>  
+      <field>CALL_DAYS_NOTICE</field>  
+      <field>CALL_SCHEDULE</field>  
+      <field>CDR_COUNTRY_CODE</field>  
+      <field>CDR_SETTLE_CODE</field>  
+      <field>CONVERTIBLE</field>  
+      <field>COUNTRY_FULL_NAME</field>  
+      <field>CPN</field>  
+      <field>CPN_CRNCY</field>  
+      <field>CPN_FREQ</field>  
+      <field>CPN_TYP</field>  
+      <field>CRNCY</field>  
+      <field>CV_CNVS_PX</field>  
+      <field>CV_COMMON_EXCH</field>  
+      <field>CV_COMMON_TICKER</field>  
+      <field>CV_MANDATORY_CNVS</field>  
+      <field>CV_START_DT</field>  
+      <field>CV_UNTIL</field>  
+      <field>DAYS_TO_SETTLE</field>  
+      <field>DAY_CNT</field>  
+      <field>DAY_CNT_DES</field>  
+      <field>DES_NOTES</field>  
+      <field>FINAL_MATURITY</field>  
+      <field>FINAL_SETTLE_DT</field>  
+      <field>FIRST_CPN_PERIOD_TYP</field>  
+      <field>FIRST_SETTLE_DT</field>  
+      <field>FLOATER</field>  
+      <field>FLT_PAY_HOLIDAY_CDR</field>  
+      <field>FLT_REFIX_HOLIDAY_CDR</field>  
+      <field>FLT_SPREAD</field>  
+      <field>ID_BBG_UNIQUE</field>  
+      <field>ID_CUSIP</field>  
+      <field>ID_ISIN</field>  
+      <field>INT_ACC_DT</field>  
+      <field>ISSUER</field>  
+      <field>ISSUER_INDUSTRY</field>  
+      <field>ISSUE_DT</field>  
+      <field>ISSUE_PX</field>  
+      <field>IS_DEBT_SECURED</field>  
+      <field>IS_INDEX_LINKED</field>  
+      <field>IS_PERPETUAL</field>  
+      <field>IS_SUBORDINATED</field>  
+      <field>IS_UNSUBORDINATED</field>  
+      <field>LAST_CPN_PERIOD_TYP</field>  
+      <field>LEAD_MGR</field>  
+      <field>MARKET_ISSUE</field>  
+      <field>MARKET_SECTOR</field>  
+      <field>MARKET_SECTOR_DES</field>  
+      <field>MIN_PIECE</field>  
+      <field>NXT_PUT_DT</field>  
+      <field>NXT_PUT_PX</field>  
+      <field>PAR_AMT</field>  
+      <field>PUTABLE</field>  
+      <field>PUT_SCHEDULE</field>  
+      <field>REAL_BLOOMBERG_DEPT_DES</field>  
+      <field>REAL_FIRST_CPN_DT</field>  
+      <field>REDEMP_CRNCY</field>  
+      <field>REDEMP_VAL</field>  
+      <field>SECURITY_DES</field>  
+      <field>SERIES</field>  
+      <field>STRUCTURED_NOTE</field>  
+      <field>TICKER</field>  
+      <field>ZERO_CPN</field> 
+    </fields>  
+    <securities> 
+      <security> 
+        <code>US17313YAL56</code>  
+        <codeType>ISIN</codeType> 
+      </security> 
+    </securities> 
+  </flexibleRequest>
+</BloombergInterfaceServerRequest>
+
+2012-11-16 18:35:39,896 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 5
+2012-11-16 18:35:39,974 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 5
+2012-11-16 18:35:39,974 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerRequest type="flexibleRequest"> 
+  <flexibleRequest> 
+    <fields> 
+      <field>AMT_ISSUED</field>  
+      <field>AMT_OUTSTANDING</field>  
+      <field>CALC_TYP</field>  
+      <field>CALLABLE</field>  
+      <field>CALL_DAYS_NOTICE</field>  
+      <field>CALL_SCHEDULE</field>  
+      <field>CDR_COUNTRY_CODE</field>  
+      <field>CDR_SETTLE_CODE</field>  
+      <field>CONVERTIBLE</field>  
+      <field>COUNTRY_FULL_NAME</field>  
+      <field>CPN</field>  
+      <field>CPN_CRNCY</field>  
+      <field>CPN_FREQ</field>  
+      <field>CPN_TYP</field>  
+      <field>CRNCY</field>  
+      <field>CV_CNVS_PX</field>  
+      <field>CV_COMMON_EXCH</field>  
+      <field>CV_COMMON_TICKER</field>  
+      <field>CV_MANDATORY_CNVS</field>  
+      <field>CV_START_DT</field>  
+      <field>CV_UNTIL</field>  
+      <field>DAYS_TO_SETTLE</field>  
+      <field>DAY_CNT</field>  
+      <field>DAY_CNT_DES</field>  
+      <field>DES_NOTES</field>  
+      <field>FINAL_MATURITY</field>  
+      <field>FINAL_SETTLE_DT</field>  
+      <field>FIRST_CPN_PERIOD_TYP</field>  
+      <field>FIRST_SETTLE_DT</field>  
+      <field>FLOATER</field>  
+      <field>FLT_PAY_HOLIDAY_CDR</field>  
+      <field>FLT_REFIX_HOLIDAY_CDR</field>  
+      <field>FLT_SPREAD</field>  
+      <field>ID_BBG_UNIQUE</field>  
+      <field>ID_CUSIP</field>  
+      <field>ID_ISIN</field>  
+      <field>INT_ACC_DT</field>  
+      <field>ISSUER</field>  
+      <field>ISSUER_INDUSTRY</field>  
+      <field>ISSUE_DT</field>  
+      <field>ISSUE_PX</field>  
+      <field>IS_DEBT_SECURED</field>  
+      <field>IS_INDEX_LINKED</field>  
+      <field>IS_PERPETUAL</field>  
+      <field>IS_SUBORDINATED</field>  
+      <field>IS_UNSUBORDINATED</field>  
+      <field>LAST_CPN_PERIOD_TYP</field>  
+      <field>LEAD_MGR</field>  
+      <field>MARKET_ISSUE</field>  
+      <field>MARKET_SECTOR</field>  
+      <field>MARKET_SECTOR_DES</field>  
+      <field>MIN_PIECE</field>  
+      <field>NXT_PUT_DT</field>  
+      <field>NXT_PUT_PX</field>  
+      <field>PAR_AMT</field>  
+      <field>PUTABLE</field>  
+      <field>PUT_SCHEDULE</field>  
+      <field>REAL_BLOOMBERG_DEPT_DES</field>  
+      <field>REAL_FIRST_CPN_DT</field>  
+      <field>REDEMP_CRNCY</field>  
+      <field>REDEMP_VAL</field>  
+      <field>SECURITY_DES</field>  
+      <field>SERIES</field>  
+      <field>STRUCTURED_NOTE</field>  
+      <field>TICKER</field>  
+      <field>ZERO_CPN</field> 
+    </fields>  
+    <securities> 
+      <security> 
+        <code>US17313YAL56</code>  
+        <codeType>ISIN</codeType> 
+      </security> 
+    </securities> 
+  </flexibleRequest>
+</BloombergInterfaceServerRequest>
+
+2012-11-16 18:36:46,970 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 5
+2012-11-16 18:36:47,142 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 5
+2012-11-16 18:37:08,422 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerRequest type="flexibleRequest"> 
+  <flexibleRequest> 
+    <fields> 
+      <field>AMT_ISSUED</field>  
+      <field>AMT_OUTSTANDING</field>  
+      <field>CALC_TYP</field>  
+      <field>CALLABLE</field>  
+      <field>CALL_DAYS_NOTICE</field>  
+      <field>CALL_SCHEDULE</field>  
+      <field>CDR_COUNTRY_CODE</field>  
+      <field>CDR_SETTLE_CODE</field>  
+      <field>CONVERTIBLE</field>  
+      <field>COUNTRY_FULL_NAME</field>  
+      <field>CPN</field>  
+      <field>CPN_CRNCY</field>  
+      <field>CPN_FREQ</field>  
+      <field>CPN_TYP</field>  
+      <field>CRNCY</field>  
+      <field>CV_CNVS_PX</field>  
+      <field>CV_COMMON_EXCH</field>  
+      <field>CV_COMMON_TICKER</field>  
+      <field>CV_MANDATORY_CNVS</field>  
+      <field>CV_START_DT</field>  
+      <field>CV_UNTIL</field>  
+      <field>DAYS_TO_SETTLE</field>  
+      <field>DAY_CNT</field>  
+      <field>DAY_CNT_DES</field>  
+      <field>DES_NOTES</field>  
+      <field>FINAL_MATURITY</field>  
+      <field>FINAL_SETTLE_DT</field>  
+      <field>FIRST_CPN_PERIOD_TYP</field>  
+      <field>FIRST_SETTLE_DT</field>  
+      <field>FLOATER</field>  
+      <field>FLT_PAY_HOLIDAY_CDR</field>  
+      <field>FLT_REFIX_HOLIDAY_CDR</field>  
+      <field>FLT_SPREAD</field>  
+      <field>ID_BBG_UNIQUE</field>  
+      <field>ID_CUSIP</field>  
+      <field>ID_ISIN</field>  
+      <field>INT_ACC_DT</field>  
+      <field>ISSUER</field>  
+      <field>ISSUER_INDUSTRY</field>  
+      <field>ISSUE_DT</field>  
+      <field>ISSUE_PX</field>  
+      <field>IS_DEBT_SECURED</field>  
+      <field>IS_INDEX_LINKED</field>  
+      <field>IS_PERPETUAL</field>  
+      <field>IS_SUBORDINATED</field>  
+      <field>IS_UNSUBORDINATED</field>  
+      <field>LAST_CPN_PERIOD_TYP</field>  
+      <field>LEAD_MGR</field>  
+      <field>MARKET_ISSUE</field>  
+      <field>MARKET_SECTOR</field>  
+      <field>MARKET_SECTOR_DES</field>  
+      <field>MIN_PIECE</field>  
+      <field>NXT_PUT_DT</field>  
+      <field>NXT_PUT_PX</field>  
+      <field>PAR_AMT</field>  
+      <field>PUTABLE</field>  
+      <field>PUT_SCHEDULE</field>  
+      <field>REAL_BLOOMBERG_DEPT_DES</field>  
+      <field>REAL_FIRST_CPN_DT</field>  
+      <field>REDEMP_CRNCY</field>  
+      <field>REDEMP_VAL</field>  
+      <field>SECURITY_DES</field>  
+      <field>SERIES</field>  
+      <field>STRUCTURED_NOTE</field>  
+      <field>TICKER</field>  
+      <field>ZERO_CPN</field> 
+    </fields>  
+    <securities> 
+      <security> 
+        <code>US17313YAL56</code>  
+        <codeType>ISIN</codeType> 
+      </security> 
+    </securities> 
+  </flexibleRequest>
+</BloombergInterfaceServerRequest>
+
+2012-11-16 18:51:19,233 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 5
+2012-11-16 18:51:19,404 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 5
+2012-11-16 18:52:01,090 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerRequest type="flexibleRequest"> 
+  <flexibleRequest> 
+    <fields> 
+      <field>AMT_ISSUED</field>  
+      <field>AMT_OUTSTANDING</field>  
+      <field>CALC_TYP</field>  
+      <field>CALLABLE</field>  
+      <field>CALL_DAYS_NOTICE</field>  
+      <field>CALL_SCHEDULE</field>  
+      <field>CDR_COUNTRY_CODE</field>  
+      <field>CDR_SETTLE_CODE</field>  
+      <field>CONVERTIBLE</field>  
+      <field>COUNTRY_FULL_NAME</field>  
+      <field>CPN</field>  
+      <field>CPN_CRNCY</field>  
+      <field>CPN_FREQ</field>  
+      <field>CPN_TYP</field>  
+      <field>CRNCY</field>  
+      <field>CV_CNVS_PX</field>  
+      <field>CV_COMMON_EXCH</field>  
+      <field>CV_COMMON_TICKER</field>  
+      <field>CV_MANDATORY_CNVS</field>  
+      <field>CV_START_DT</field>  
+      <field>CV_UNTIL</field>  
+      <field>DAYS_TO_SETTLE</field>  
+      <field>DAY_CNT</field>  
+      <field>DAY_CNT_DES</field>  
+      <field>DES_NOTES</field>  
+      <field>FINAL_MATURITY</field>  
+      <field>FINAL_SETTLE_DT</field>  
+      <field>FIRST_CPN_PERIOD_TYP</field>  
+      <field>FIRST_SETTLE_DT</field>  
+      <field>FLOATER</field>  
+      <field>FLT_PAY_HOLIDAY_CDR</field>  
+      <field>FLT_REFIX_HOLIDAY_CDR</field>  
+      <field>FLT_SPREAD</field>  
+      <field>ID_BBG_UNIQUE</field>  
+      <field>ID_CUSIP</field>  
+      <field>ID_ISIN</field>  
+      <field>INT_ACC_DT</field>  
+      <field>ISSUER</field>  
+      <field>ISSUER_INDUSTRY</field>  
+      <field>ISSUE_DT</field>  
+      <field>ISSUE_PX</field>  
+      <field>IS_DEBT_SECURED</field>  
+      <field>IS_INDEX_LINKED</field>  
+      <field>IS_PERPETUAL</field>  
+      <field>IS_SUBORDINATED</field>  
+      <field>IS_UNSUBORDINATED</field>  
+      <field>LAST_CPN_PERIOD_TYP</field>  
+      <field>LEAD_MGR</field>  
+      <field>MARKET_ISSUE</field>  
+      <field>MARKET_SECTOR</field>  
+      <field>MARKET_SECTOR_DES</field>  
+      <field>MIN_PIECE</field>  
+      <field>NXT_PUT_DT</field>  
+      <field>NXT_PUT_PX</field>  
+      <field>PAR_AMT</field>  
+      <field>PUTABLE</field>  
+      <field>PUT_SCHEDULE</field>  
+      <field>REAL_BLOOMBERG_DEPT_DES</field>  
+      <field>REAL_FIRST_CPN_DT</field>  
+      <field>REDEMP_CRNCY</field>  
+      <field>REDEMP_VAL</field>  
+      <field>SECURITY_DES</field>  
+      <field>SERIES</field>  
+      <field>STRUCTURED_NOTE</field>  
+      <field>TICKER</field>  
+      <field>ZERO_CPN</field> 
+    </fields>  
+    <securities> 
+      <security> 
+        <code>US17313YAL56</code>  
+        <codeType>ISIN</codeType> 
+      </security> 
+    </securities> 
+  </flexibleRequest>
+</BloombergInterfaceServerRequest>
+
+2012-11-16 18:52:25,322 [main] INFO  musi.interfaces.BulkStaticUploader - murex response is : <?xml version="1.0" encoding="UTF-8"?>
+
+<MxResponse>
+  <status>FAILURE</status>
+  <descr>C 1.875 OCT12</descr>
+  <errorCode>DUPLICATE_SECURITY</errorCode>
+  <originalRequest>
+    <BloombergInterfaceServerResponse>
+      <securities>
+        <security>
+          <CALL_SCHEDULE_GROUP/>
+          <FLT_PAY_HOLIDAY_CDR_GROUP/>
+          <FLT_REFIX_HOLIDAY_CDR_GROUP/>
+          <PUT_SCHEDULE_GROUP/>
+          <AMT_ISSUED>5.0E9</AMT_ISSUED>
+          <AMT_OUTSTANDING>0.0</AMT_OUTSTANDING>
+          <CALC_TYP>1</CALC_TYP>
+          <CALLABLE>N</CALLABLE>
+          <CDR_COUNTRY_CODE>US</CDR_COUNTRY_CODE>
+          <CDR_SETTLE_CODE>US</CDR_SETTLE_CODE>
+          <CONVERTIBLE>N</CONVERTIBLE>
+          <COUNTRY_FULL_NAME>UNITED STATES</COUNTRY_FULL_NAME>
+          <CPN>1.875</CPN>
+          <CPN_CRNCY>USD</CPN_CRNCY>
+          <CPN_FREQ>2</CPN_FREQ>
+          <CPN_TYP>FIXED</CPN_TYP>
+          <CRNCY>USD</CRNCY>
+          <DAYS_TO_SETTLE>3</DAYS_TO_SETTLE>
+          <DAY_CNT>5</DAY_CNT>
+          <DAY_CNT_DES>30/360</DAY_CNT_DES>
+          <DES_NOTES>ORIG SPRD @ ISS 49.4BP (99.642).</DES_NOTES>
+          <FINAL_MATURITY>2012-10-22</FINAL_MATURITY>
+          <FIRST_CPN_PERIOD_TYP>Long First</FIRST_CPN_PERIOD_TYP>
+          <FIRST_SETTLE_DT>2009-09-22</FIRST_SETTLE_DT>
+          <FLOATER>N</FLOATER>
+          <ID_CUSIP>17313YAL5</ID_CUSIP>
+          <ID_ISIN>US17313YAL56</ID_ISIN>
+          <INT_ACC_DT>2009-09-22</INT_ACC_DT>
+          <ISSUER>CITIGROUP FUNDING INC</ISSUER>
+          <ISSUER_INDUSTRY>FINANCIAL</ISSUER_INDUSTRY>
+          <ISSUE_DT>2009-09-22</ISSUE_DT>
+          <ISSUE_PX>99.642</ISSUE_PX>
+          <IS_DEBT_SECURED>N</IS_DEBT_SECURED>
+          <IS_INDEX_LINKED>N</IS_INDEX_LINKED>
+          <IS_PERPETUAL>N</IS_PERPETUAL>
+          <IS_SUBORDINATED>N</IS_SUBORDINATED>
+          <IS_UNSUBORDINATED>N</IS_UNSUBORDINATED>
+          <LAST_CPN_PERIOD_TYP>Normal</LAST_CPN_PERIOD_TYP>
+          <LEAD_MGR>CITI</LEAD_MGR>
+          <MARKET_ISSUE>US DOMESTIC</MARKET_ISSUE>
+          <MARKET_SECTOR>8</MARKET_SECTOR>
+          <MARKET_SECTOR_DES>Corp</MARKET_SECTOR_DES>
+          <MIN_PIECE>1000.0</MIN_PIECE>
+          <PAR_AMT>1000.0</PAR_AMT>
+          <PUTABLE>N</PUTABLE>
+          <REAL_BLOOMBERG_DEPT_DES>Corp</REAL_BLOOMBERG_DEPT_DES>
+          <REAL_FIRST_CPN_DT>2010-04-22</REAL_FIRST_CPN_DT>
+          <REDEMP_CRNCY>USD</REDEMP_CRNCY>
+          <REDEMP_VAL>100.0</REDEMP_VAL>
+          <SECURITY_DES>C 1 7/8 10/22/12</SECURITY_DES>
+          <STRUCTURED_NOTE>N</STRUCTURED_NOTE>
+          <TICKER>C</TICKER>
+          <ZERO_CPN>N</ZERO_CPN>
+        </security>
+      </securities>
+    </BloombergInterfaceServerResponse>
+  </originalRequest>
+</MxResponse>
+
+2012-11-16 18:52:29,525 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerResponse type="flexibleRequest"> 
+  <securities> 
+    <security id="US3128CURM06" status="success"> 
+      <CALL_SCHEDULE_GROUP/>  
+      <FLT_PAY_HOLIDAY_CDR_GROUP/>  
+      <FLT_REFIX_HOLIDAY_CDR_GROUP/>  
+      <PUT_SCHEDULE_GROUP/>  
+      <AMT_OUTSTANDING>2.1695630520325E7</AMT_OUTSTANDING>  
+      <CALLABLE>N</CALLABLE>  
+      <CDR_COUNTRY_CODE>US</CDR_COUNTRY_CODE>  
+      <COUNTRY_FULL_NAME>UNITED STATES</COUNTRY_FULL_NAME>  
+      <CPN>5.5</CPN>  
+      <CPN_FREQ>12</CPN_FREQ>  
+      <CPN_TYP>FIXED</CPN_TYP>  
+      <CRNCY>USD</CRNCY>  
+      <DAYS_TO_SETTLE>17</DAYS_TO_SETTLE>  
+      <DAY_CNT>104</DAY_CNT>  
+      <DAY_CNT_DES>30/360(104)</DAY_CNT_DES>  
+      <FIRST_SETTLE_DT>2010-10-01</FIRST_SETTLE_DT>  
+      <FLOATER>N</FLOATER>  
+      <ID_CUSIP>3128CURM0</ID_CUSIP>  
+      <ID_ISIN>US3128CURM06</ID_ISIN>  
+      <ISSUER>Freddie Mac</ISSUER>  
+      <ISSUE_DT>2010-10-01</ISSUE_DT>  
+      <MARKET_SECTOR>11</MARKET_SECTOR>  
+      <MARKET_SECTOR_DES>Mtge</MARKET_SECTOR_DES>  
+      <PAR_AMT>4.699826E7</PAR_AMT>  
+      <SECURITY_DES>FG G30492</SECURITY_DES>  
+      <TICKER>FG</TICKER> 
+    </security> 
+  </securities>
+</BloombergInterfaceServerResponse>
+
+2012-11-16 18:55:08,282 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities to process: 5
+2012-11-16 18:55:08,360 [main] INFO  musi.interfaces.requestbuilder.RequestBuilder - Number of securities processed: 5
+2012-11-16 18:55:08,376 [main] INFO  musi.interfaces.BulkStaticUploader - message is : <?xml version="1.0" encoding="UTF-8"?>
+
+<BloombergInterfaceServerRequest type="flexibleRequest"> 
+  <flexibleRequest> 
+    <fields> 
+      <field>AMT_ISSUED</field>  
+      <field>AMT_OUTSTANDING</field>  
+      <field>CALC_TYP</field>  
+      <field>CALLABLE</field>  
+      <field>CALL_DAYS_NOTICE</field>  
+      <field>CALL_SCHEDULE</field>  
+      <field>CDR_COUNTRY_CODE</field>  
+      <field>CDR_SETTLE_CODE</field>  
+      <field>CONVERTIBLE</field>  
+      <field>COUNTRY_FULL_NAME</field>  
+      <field>CPN</field>  
+      <field>CPN_CRNCY</field>  
+      <field>CPN_FREQ</field>  
+      <field>CPN_TYP</field>  
+      <field>CRNCY</field>  
+      <field>CV_CNVS_PX</field>  
+      <field>CV_COMMON_EXCH</field>  
+      <field>CV_COMMON_TICKER</field>  
+      <field>CV_MANDATORY_CNVS</field>  
+      <field>CV_START_DT</field>  
+      <field>CV_UNTIL</field>  
+      <field>DAYS_TO_SETTLE</field>  
+      <field>DAY_CNT</field>  
+      <field>DAY_CNT_DES</field>  
+      <field>DES_NOTES</field>  
+      <field>FINAL_MATURITY</field>  
+      <field>FINAL_SETTLE_DT</field>  
+      <field>FIRST_CPN_PERIOD_TYP</field>  
+      <field>FIRST_SETTLE_DT</field>  
+      <field>FLOATER</field>  
+      <field>FLT_PAY_HOLIDAY_CDR</field>  
+      <field>FLT_REFIX_HOLIDAY_CDR</field>  
+      <field>FLT_SPREAD</field>  
+      <field>ID_BBG_UNIQUE</field>  
+      <field>ID_CUSIP</field>  
+      <field>ID_ISIN</field>  
+      <field>INT_ACC_DT</field>  
+      <field>ISSUER</field>  
+      <field>ISSUER_INDUSTRY</field>  
+      <field>ISSUE_DT</field>  
+      <field>ISSUE_PX</field>  
+      <field>IS_DEBT_SECURED</field>  
+      <field>IS_INDEX_LINKED</field>  
+      <field>IS_PERPETUAL</field>  
+      <field>IS_SUBORDINATED</field>  
+      <field>IS_UNSUBORDINATED</field>  
+      <field>LAST_CPN_PERIOD_TYP</field>  
+      <field>LEAD_MGR</field>  
+      <field>MARKET_ISSUE</field>  
+      <field>MARKET_SECTOR</field>  
+      <field>MARKET_SECTOR_DES</field>  
+      <field>MIN_PIECE</field>  
+      <field>NXT_PUT_DT</field>  
+      <field>NXT_PUT_PX</field>  
+      <field>PAR_AMT</field>  
+      <field>PUTABLE</field>  
+      <field>PUT_SCHEDULE</field>  
+      <field>REAL_BLOOMBERG_DEPT_DES</field>  
+      <field>REAL_FIRST_CPN_DT</field>  
+      <field>REDEMP_CRNCY</field>  
+      <field>REDEMP_VAL</field>  
+      <field>SECURITY_DES</field>  
+      <field>SERIES</field>  
+      <field>STRUCTURED_NOTE</field>  
+      <field>TICKER</field>  
+      <field>ZERO_CPN</field> 
+    </fields>  
+    <securities> 
+      <security> 
+        <code>US17313YAL56</code>  
+        <codeType>ISIN</codeType> 
+      </security> 
+    </securities> 
+  </flexibleRequest>
+</BloombergInterfaceServerRequest>
+

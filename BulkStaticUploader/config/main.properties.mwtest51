@@ -1,0 +1,7 @@
+# MQ/JMS related properties
+mq.receive_queue=
+mq.send_queue=
+mq.queue_manager=MWTEST51
+mq.queue_hostname=mwtest
+mq.queue_port=1451
+mq.channel=MQADMIN

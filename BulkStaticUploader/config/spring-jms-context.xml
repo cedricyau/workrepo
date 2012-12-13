@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:util="http://www.springframework.org/schema/util"	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/tx
+     					   http://www.springframework.org/schema/tx/spring-tx-3.0.xsd   
+     					   http://www.springframework.org/schema/aop 
+     					   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd                        
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/task 
+                           http://www.springframework.org/schema/task/spring-task-3.0.xsd
+                           http://www.springframework.org/schema/util 
+                           http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+                           
+ 	
+
+	<!-- WebSphere MQ Connection Factory -->
+	
+  	<bean id="mqConnectionFactory" class="com.ibm.mq.jms.MQQueueConnectionFactory">
+	<!--<bean id="mqConnectionFactory" class="com.ibm.mq.jms.MQXAConnectionFactory">-->	
+		<property name="hostName">
+			<value>${mq.queue_hostname}</value>
+		</property>
+		<property name="port">
+			<value>${mq.queue_port}</value>
+		</property>
+		<property name="queueManager">
+			<value>${mq.queue_manager}</value>
+		</property>
+		<property name="channel">
+			<value>${mq.channel}</value>
+		</property>
+	     <property name="transportType">
+			<value>1</value>
+		</property>	
+		
+	</bean>
+	
+	<!-- JMS Queue Connection Factory -->
+     <bean id="jmsQueueConnectionFactory"
+		class="org.springframework.jms.connection.SingleConnectionFactory">
+		<property name="targetConnectionFactory">
+			<ref bean="mqConnectionFactory" />
+		</property>
+	</bean>
+
+	<!-- PlatformTransactionManager for JMS -->
+  	<bean id="jmsTxManager"
+		class="org.springframework.jms.connection.JmsTransactionManager">
+		<property name="connectionFactory" ref="jmsQueueConnectionFactory" />
+	</bean>
+ 
+	<!-- the transactional advice -->
+ 	<tx:advice id="txAdvice" transaction-manager="jmsTxManager">		
+		<tx:attributes>
+			<tx:method name="process" />
+		</tx:attributes>
+	</tx:advice>
+
+
+	<!-- JMS Destination Resolver -->
+	<bean id="jmsDestinationResolver"
+		class="org.springframework.jms.support.destination.DynamicDestinationResolver">
+	</bean>
+
+	<!-- JMS Queue Template -->
+	<bean id="jmsQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory">
+			<ref bean="jmsQueueConnectionFactory" />
+		</property>
+		<property name="destinationResolver">
+			<ref bean="jmsDestinationResolver" />
+		</property>
+		<property name="pubSubDomain">
+			<value>false</value>
+		</property>
+		<property name="receiveTimeout">
+			<!--<value>10000</value>-->
+			<util:constant static-field="org.springframework.jms.core.JmsTemplate.RECEIVE_TIMEOUT_INDEFINITE_WAIT"/>		
+		</property>
+		<property name="sessionTransacted">
+			<value>true</value>
+		</property>
+	</bean>	
+	
+</beans>
