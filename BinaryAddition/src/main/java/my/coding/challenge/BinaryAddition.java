@@ -1,7 +1,20 @@
 package my.coding.challenge;
 
+/**
+ * 
+ * @author Richard Mason
+ * Class to output the result of adding two binary numbers
+ *
+ */
 public class BinaryAddition {
 	
+	/**
+	 * 
+	 * @param num1
+	 * @param num2
+	 * @return result
+	 * @throws IllegalArgumentException
+	 */
 	public String add(String num1, String num2) throws IllegalArgumentException {
 		StringBuilder result = new StringBuilder();
 		String inner;
