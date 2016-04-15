@@ -1,0 +1,141 @@
+<project name="BinaryAddition" basedir="." default="run">
+
+	<description>
+		<!-- TODO -->
+	</description>
+
+	<property name="project.name" value="BinaryAddition" />
+	<property name="main.build.dir" value="build/main" />
+	<property name="main.src.dir" value="src/main/java" />
+	<property name="test.build.dir" value="build/test" />
+	<property name="test.src.dir" value="src/test/java" />
+	<property name="jar.dir" value="jar" />
+	<property name="lib.dir" value="lib" />
+	<property name="dist.dir" value="dist"/>
+	<property name="test.reports.dir" value="reports"/>
+
+	<path id="classpath">
+		<fileset dir="${lib.dir}" includes="**/*.jar" />
+		<fileset dir="${jar.dir}" includes="**/*.jar" />
+	</path>
+
+	<target name="-check-use-file" unless="file.exists">
+		<available property="file.exists" file="${jar.dir}/${project.name}.jar" />
+	</target>
+
+	<target name="use-file" depends="-check-use-file" if="${file.exists}">
+		<delete file="${jar.dir}/${project.name}.jar" />
+	</target>
+
+	<target name="init">
+		<!-- deletes previously created jar -->
+		<!--antcall target="use-file" /-->
+
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${main.build.dir}" />
+
+		<!-- Create the directory used to hold the built jar -->
+		<mkdir dir="${jar.dir}" />
+		
+		<mkdir dir="${test.build.dir}" />
+		
+		<mkdir dir="${test.reports.dir}" />
+	</target>
+
+	<target name="compile" depends="init" description="compile the source">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac debug="true" srcdir="${main.src.dir}" destdir="${main.build.dir}" 
+			classpathref="classpath" includeantruntime="false" />
+		<copy todir="${main.build.dir}">
+			<fileset dir="${main.src.dir}" excludes="**/*.java" />
+		</copy>
+	</target>
+
+	<target name="jar" depends="init,compile" description="build the jar">
+		<manifestclasspath property="jar.classpath" jarfile="${jar.dir}/${ant.project.name}.jar">
+			<classpath refid="classpath" />
+		</manifestclasspath>
+		<!-- Put everything in ${build} into the ${project.name}.jar file -->
+		<jar destfile="${jar.dir}/${project.name}.jar" basedir="${main.build.dir}"/>
+
+		<chmod file="${basedir}/${jar.dir}/${project.name}.jar" perm="544" type="both" />
+
+		<!--antcall target="clean" /-->
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} directory trees -->
+		<delete dir="${main.build.dir}" />
+		<delete dir="${test.build.dir}" />
+	</target>
+
+	<target name="run" depends="clean,buildJar" />
+
+	<target name="buildJar" depends="init,compile" description="build the jar">
+		<antcall target="jar" />
+	</target>
+
+	<target name="dist" description="prepare artefacts for jenkins">
+		<antcall target="jar" />
+
+		<!-- delete dist folder and files -->
+		<delete dir="${dist.dir}" />
+
+		<!-- Copy library files to dist directory -->
+		<copy todir="${dist.dir}/${lib.dir}">
+			<fileset dir="${lib.dir}" />
+		</copy>
+
+		<!-- Copy resource files to dist directory -->
+		<copy todir="${dist.dir}">
+			<fileset dir="${basedir}" includes="*.xml" excludes="build.*,**/bin/**" />
+		</copy>
+
+		<!-- Copy jar to dist folder -->
+		<copy todir="${dist.dir}/${jar.dir}">
+			<fileset dir="${basedir}/${jar.dir}"/>
+		</copy>
+
+		<!-- Copy batch file to dist folder -->
+		<copy todir="${dist.dir}">
+			<fileset dir="${basedir}" includes="${project.name}.bat" />
+		</copy>
+	</target>
+
+	<target name="test-compile" depends="compile">
+		<javac srcdir="${test.src.dir}" destdir="${test.build.dir}" includeantruntime="false">
+			<classpath refid="classpath" />
+		</javac>
+		<copy todir="${test.build.dir}">
+			<fileset dir="${test.src.dir}" excludes="**/*.java" />
+		</copy>
+	</target>
+
+	<target name="test" depends="test-compile">
+		<junit printsummary="yes" haltonfailure="yes" fork="true">
+			<formatter type="plain" usefile="false" />
+			<formatter type="xml" />
+			<batchtest>
+				<fileset dir="${test.src.dir}">
+					<include name="**/*Test.java" />
+					<exclude name="**/Test*All.java" />
+				</fileset>
+			</batchtest>
+			<classpath>
+				<path refid="classpath" />
+				<pathelement location="${test.build.dir}" />
+			</classpath>			
+		</junit>
+	</target>
+	
+	<target name="report" depends="test">
+		<mkdir dir="${test.reports.dir}/html" />
+		<junitreport todir="${test.reports.dir}">
+			<fileset dir="${test.reports.dir}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report todir="${test.reports.dir}/html" />
+		</junitreport>
+	</target>
+
+</project>
