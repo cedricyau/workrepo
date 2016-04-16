@@ -1,9 +1,5 @@
 <project name="BinaryAddition" basedir="." default="run">
 
-	<description>
-		<!-- TODO -->
-	</description>
-
 	<property name="project.name" value="BinaryAddition" />
 	<property name="main.build.dir" value="build/main" />
 	<property name="main.src.dir" value="src/main/java" />
@@ -81,23 +77,28 @@
 		<!-- delete dist folder and files -->
 		<delete dir="${dist.dir}" />
 
-		<!-- Copy src files to dist directory -->
-		<copy todir="${dist.dir}">
-			<fileset dir="${basedir}/${main.src.dir}" includes="*.java" />
+		<!-- Copy main src files to dist directory -->
+		<copy todir="${dist.dir}/${main.src.dir}">
+			<fileset dir="${basedir}/${main.src.dir}" />
+		</copy>
+		
+		<!-- Copy test src files to dist directory -->
+		<copy todir="${dist.dir}/${test.src.dir}">
+			<fileset dir="${basedir}/${test.src.dir}" />
 		</copy>
 
-		<!-- Copy resource files to dist directory -->
+		<!-- Copy build and test result to dist directory -->
 		<copy todir="${dist.dir}">
-			<fileset dir="${basedir}" includes="*.xml" excludes="build.*,**/bin/**" />
+			<fileset dir="${basedir}" includes="*.xml" excludes="build*"/>
 		</copy>
 
 		<!-- Copy jar to dist folder -->
-		<copy todir="${dist.dir}">
+		<copy todir="${dist.dir}/lib">
 			<fileset dir="${basedir}/${jar.dir}" excludes="*-Test.jar" />
 		</copy>
 
 		<!-- Copy doc to dist folder -->
-		<copy todir="${dist.dir}">
+		<copy todir="${dist.dir}/doc">
 			<fileset dir="${doc.dir}" includes="*.docx" />
 		</copy>
 	</target>
